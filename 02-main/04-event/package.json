@@ -1,7 +1,7 @@
 {
   "name": "helloapp",
   "version": "1.0.0",
-  "description": "First Angular 11 Project",
+  "description": "Angular 11. Lesson 5",
   "author": "Alexey Danilov",
   "scripts": {
     "ng": "ng",
