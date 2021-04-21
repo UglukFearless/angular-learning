@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     styles:[` 
-        .navigation { clear: both;}
-        a {float: left;}
-        .active a { color: red;}
+        .navigation { clear: both; }
+        a { float: left; }
+        .active a { color: red; }
     `],
     template: `
     <div>
