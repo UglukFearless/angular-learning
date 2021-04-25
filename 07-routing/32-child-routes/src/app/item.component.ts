@@ -6,28 +6,19 @@ import { Subscription } from 'rxjs';
     selector: 'item-info',
     template: `
         <h3>Model {{ id }}</h3>
-        <div>Product: {{ product }}</div>
-        <div>Price: {{ price }}</div>
+        <router-outlet></router-outlet>
         `,
 })
 export class ItemComponent {
 
     id: number;
-    product: string;
-    price: string;
 
     private routeSubscription: Subscription;
-    private querySubscription: Subscription;
 
     constructor(private route: ActivatedRoute) {
 
         this.routeSubscription = route.params.subscribe( params => {
             this.id = params['id'];
-        });
-
-        this.querySubscription = route.queryParams.subscribe( queryParams => {
-            this.product = queryParams['product'];
-            this.price = queryParams['price'];
         });
     }
 }
